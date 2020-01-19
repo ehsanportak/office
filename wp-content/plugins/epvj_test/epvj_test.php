@@ -16,7 +16,7 @@ class epwg_test extends WP_Widget{
     {
         parent :: __construct(
             'epwg_id_construct',
-            'نویسندگان برتر',
+            'نویسنده ی برتر',
             array(
                 'description' => 'سابقه نویسندگان برتر',
                 'classname'   => 'epwg_form_class'
