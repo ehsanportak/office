@@ -1,5 +1,5 @@
 <?php
-$epmb_meta_genres = get_post_meta( '25' , '_epmb_genres' , true);
+$epmb_meta_genres = get_post_meta('25', '_epmb_genres', true);
 echo $epmb_meta_genres;
 ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
