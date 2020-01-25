@@ -1,3 +1,7 @@
+<?php
+$epmb_meta_genres = get_post_meta( '25' , '_epmb_genres' , true);
+echo $epmb_meta_genres;
+?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <select id="test" name="garden">
@@ -14,6 +18,7 @@
 </script>
 <?php
 $url = ("http://moviesapi.ir/api/v1/genres/" . $_GET['genre_id'] . "/movies?page=" . $_GET['page'] . "");
+
 ?>
 <div class="style" style="overflow-x: auto;">
 
