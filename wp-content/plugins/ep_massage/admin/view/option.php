@@ -2,6 +2,7 @@
     <h2>تنظیمات</h2>
     <form action="" method="POST">
         <table class="form-table">
+            <?php if(!current_user_can('admimistrator')): ?>
             <tr >
                 <th scope="row">
                     <label for="epnm_welcome_messag">فعال کردن</label>
@@ -12,6 +13,7 @@
 
                 </td>
             </tr>
+            <?php endif; ?>
             <tr >
                 <th scope="row">
                     <label for="epnm_welcome_messag">پیام خوش امد گویی</label>

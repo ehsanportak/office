@@ -5,7 +5,7 @@ plugin uri://www.google.com
 author:ehsanportak
 author uri:ehsanportak@gmail.com
 version:1.0.0
-description:این افزونه یک ابزارک اراعه میدهد
+description:این افزونهok  یک ابزارک اراعه میدهد
 licence:GPLv2
 */
 defined('ABSPATH') || exit;
@@ -80,6 +80,7 @@ class epwg_test extends WP_Widget
 
         $url = 1;
     ?>
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <style type="text/css">
             .tg {
@@ -203,7 +204,6 @@ class epwg_test extends WP_Widget
         </body>
 
         </html>
-
 <?php
         echo $before_witget . $before_title . $title . $after_title;
         $user = new WP_User_Query(array(
@@ -231,12 +231,15 @@ add_action('wp_dashboard_setup', function () {
     // print_r($wp_meta_baxes);
     // echo '</pre>';
     // wp_die(ob_get_clean()); 
+    if (is_super_admin()){
     wp_add_dashboard_widget(
         'epwg_dashboard_new',
         'اخبار ورزشی',
         'epwg_dashboard_new_func'
     );
+}
 });
+
 function epwg_dashboard_new_func()
 {
     echo '<div id="tgju-data"></div><script>var tgju_params = { type: "simple", items: ["sekeb","sekee","nim","rob","gerami"], columns: ["diff","time"], placeholder: "tgju-data", token: "webservice" };</script><script src="https://api.tgju.online/v1/widget"></script>';

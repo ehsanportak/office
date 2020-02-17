@@ -1,0 +1,11 @@
+#ep_insert_film {
+    border: 1px solid #a0a0a0 ;
+    padding: 20px;
+    background: white;
+    border-radius: 3px;
+    display: none;
+}
+#ep_status{
+    color: green;
+    visibility: hidden;
+}

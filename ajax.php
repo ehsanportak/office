@@ -1,8 +1,15 @@
+
 <?php
+
+if ($_REQUEST['ganer'] == ""){
+    $_REQUEST['ganer']=   $_REQUEST['defpage'];
+
+}
 if ($_REQUEST) {
     $url = "http://moviesapi.ir/api/v1/genres/" . $_REQUEST['ganer'] . "/movies?page=" . $_REQUEST['page'] . "";
     $api = file_get_contents($url);
     $b = json_decode($api, true);
+    
 ?>
     <table class="tg">
         <tr>
@@ -17,7 +24,11 @@ if ($_REQUEST) {
             <th class="tg-0pky">image</th>
             <th class="tg-0pky">image</th>
         </tr>
-        <?php for ($i = 0; $i <= 9; $i++) { '<tr>'?>
+        <?php for ($i = 0; $i <= 9; $i++) { '<tr>';
+            if($b['data'][$i]['id']== ""){
+            break;
+            }
+            ?>
             <td class="tg-0lax"> <?= $b['data'][$i]['id']?>  </td>
             <td class="tg-0lax"> <?= $b['data'][$i]['title'] ?> </td>
             <td class="tg-0lax"><img src="<?= $b['data'][$i]['poster'] ?>" width="100px" height="100px"></td>

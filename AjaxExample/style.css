@@ -1,0 +1,50 @@
+* { font-family: Tahoma, 'Courier New', Courier }
+
+*:focus { outline: none; }
+
+body {
+    text-align: center; 
+    background-color: #fafafa;
+    color: #000000;
+    direction: rtl;
+    padding: 15px;    
+}
+
+h1 { font-size: 200%; }
+h2 { font-size: 160%; }
+p { line-height: 1.8em; }
+
+a {
+    text-decoration: none;
+}
+a:focus {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #3399ff;
+    color:#ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 3px 5px 0px #86a8c0;
+    transition: all 0.10s linear;
+}
+
+button:hover {
+    background-color: #3366ff;
+}
+
+button:focus {
+    background-color: #3377ff;
+    box-shadow: 0px 1px 5px 0px #86a8c0;
+}
+
+#result {
+    direction: ltr;
+    margin: 3em;
+}
+
+#result * {
+    font-family: 'Courier New', Courier, monospace !important;
+}
