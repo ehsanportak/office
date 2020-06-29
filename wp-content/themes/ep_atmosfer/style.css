@@ -1,0 +1,724 @@
+/*
+Theme Name:atmosfer
+Theme Uri:www.google.com
+author:ehsanportak
+author uri:ehsanportak@gmail.com
+description:سایت اتمسفر
+version:1.0.0
+*/ 
+
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+  
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  
+  
+  
+  /* آغاز استایل دهی */
+  
+  /* start top header */
+  
+  
+  
+  .top-header {
+    height: 55px;
+    background-color: #545353;
+    border-radius: 0px;
+  }
+  
+  .logo {
+    float: right;
+  }
+  
+  .logo img{
+    width: 100px;
+    padding: 10px;
+  }
+  
+  .top-right-menu {
+    float: right;
+    width: 50%;
+  }
+  
+  .top-right-menu ul{
+    float: right;
+  }
+  .top-right-menu ul li{
+  float: right;
+  list-style: none;
+  }
+  .top-right-menu ul li a {
+    text-decoration: none;
+    padding: 14px;
+    font-size: 17px;
+    color: #cec1c1;
+  }
+  .top-right-menu ul li a:hover{
+    color: #ffffff;
+  
+  }
+  .search-container {
+    float: right;
+  }
+  
+  .search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    color: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .search-container {
+      float: none;
+    }
+    .search-container input[type=text],.search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .search-container input[type=text] {
+      border: 1px solid rgb(231, 226, 226);  
+      border-radius: 10px;
+    }
+  
+    
+  }
+  
+.logined {
+    width: 50%;
+    margin-left: 25px;
+    padding-top: 14px;
+    font-size: 17px;
+}
+
+  .login-rig{
+    float: left;
+  }
+  
+  .login-rig ul{
+    list-style: none;
+  }
+  
+  .login-rig ul li{
+    float: left;
+    margin-left: 10px;
+  }
+  
+  .login-rig ul li a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 17px;
+    color: #cec1c1;
+  }
+  .login-rig ul li a:hover{
+    color: rgb(255, 253, 253);
+  
+  }
+  
+  .login-rig ul li i{
+    color: #cec1c1;
+  
+  }
+  
+  /* end top header */
+  
+  
+  
+  /* start slider */
+  
+  .rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+  
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+  
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    }
+  
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    position: relative;
+    }
+  
+  .fa-chevron-circle-left{
+    font-size: 50px !important;
+    position: absolute;
+    top: 338px;
+    z-index: 1000;
+    color: #fffefe;
+    font-size: 52px;
+    left: 100px;
+  }  
+  
+  .fa-chevron-circle-right{
+    font-size: 50px !important;
+    position: absolute;
+    top: 338px;
+    z-index: 1000;
+    color: #fffefe;
+    font-size: 52px;
+    right: 100px;
+  }
+  
+  /* end slider */
+  
+  
+  /* start main content */
+  
+  #wrapper{
+    width: 960px;
+    margin: auto;
+    
+  }
+  .main-content{
+    float: right;
+    margin-top: 15px;
+  }
+  .main-content h2{
+    text-align: right;
+  }
+  
+  #wrapper .main-content .content{
+    height: 200px;
+    width: 300px;
+    border: 1px solid #c1bfbf;
+    float: right;
+    margin-left: 18px;
+    margin-top: 15px;
+  }
+  
+  #wrapper .main-content .content img{
+    width: 297px;
+    height: 173px;
+    text-align: center;
+    padding: 1px;
+  }
+  
+  #wrapper .main-content .content p{
+    text-align: center;
+      margin-top: 0px;
+      font-family: tahoma;
+      background: #444141;
+      color: #d2d1d1;
+      height: 25px;
+  }
+  
+  
+  
+  /* end main content */
+  
+  
+  
+  /* start single content */
+
+  #wrapper .single-content{
+    text-align: center;
+    margin-top: 60px;
+    border: 1px solid #dddddd;
+    padding-top: 60px;
+  }
+  #wrapper .single-content img{
+    width: 800px;
+    margin-bottom: 30px;
+    height: 500px;
+
+  }
+  #wrapper .single-content h3{
+    font-family: tahoma;
+  }
+  #wrapper .single-content p{
+    font-family: tahoma;
+    margin: 15px 50px;
+    margin-bottom: 72px;
+  }
+  
+  
+  /* end single content */
+  
+  
+  /* start search hotel */
+  #wrapper .search-hotels{
+  width: 100%;
+  text-align: right;
+  }
+  
+  #wrapper .search-hotel-top{}
+  #wrapper .search-hotel-top i{}
+  #wrapper .search-hotel-top h2{
+    font-family: tahoma;
+  }
+  
+  #wrapper .search-hotel-bottom{
+  
+  }
+  #wrapper .search-hotel-bottom .search-hotel{}
+  #wrapper .search-hotel-bottom .search-hotel input{
+    width: 40%;
+    height: 50px;
+    text-align: right;
+  
+  }
+  #wrapper .search-hotel-bottom .search-hotel button{
+    width: 15%;
+    height: 56px;
+    background: #545353;
+    color: #d2caca;
+    font-family: tahoma;
+    cursor: pointer;
+  }
+  #wrapper .search-hotel-bottom .search-hotel button:hover{
+    color: rgb(75, 147, 240);
+  }
+  
+  
+  /* end search hotel */
+  
+  
+  
+  
+  /* start hotel content  */
+  #wrapper .h2{
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin-top: 50px;
+    border-top: 1px solid #b9b9b9;
+    padding: 18px 30px 0px 0px;
+  }
+  #wrapper .hotels{
+    float: right;
+    text-align: right;
+  
+    width: 94%;
+  
+  
+  }
+  #wrapper .hotels a{
+    text-decoration: none;
+  
+  }
+  #wrapper .hotels h2{
+  
+  }
+  #wrapper .hotels .hotel{
+    padding-top: 20px;
+    float: right;
+    text-align: right;
+    margin-top: 40px;
+    width: 94%;
+    margin-right: 39px;
+    box-shadow: 4px 4px 20px #b7b7b7;
+  
+  }
+  #wrapper .hotels .hotel img{
+    float: right;
+    width: 250px;
+    height: 165px;
+    padding: 2px 22px 22px 60px;
+  }
+  #wrapper .hotels .hotel .tozihat{
+    margin-top: 5px;
+  }
+  #wrapper .hotels .hotel .tozihat span{
+    background: #53f1f9;
+    padding: 5px;
+    border-radius: 5px;
+    color: #0b4d9e;
+
+    
+  }
+  .hotel-title{
+    font-size: 15px;
+    font-family: tahoma;
+    color: #6f6e6e;
+  }
+  #wrapper .hotels .hotel .tozihat h1{
+    color: #7b7a7a;
+  }
+  #wrapper .hotels .hotel .tozihat p{}
+  #wrapper .hotels .hotel .tozihat .address{
+    font-family: tahoma;
+      font-size: 13px;
+      margin-top: 63px;
+      color: #969696;
+  }
+  #wrapper .hotels .hotel .tozihat .gheymat{
+    float: left;
+    margin-left: 35px;
+    color: #615f5f;
+  }
+  
+  
+  /* end hotel content  */
+  
+
+  /* start footer */
+  
+  .main-footer{
+    width: 100%;
+    height: 327px;
+    background: #545353;
+    float: right;
+    margin-top: 94px;
+  }
+  .main-footer .right-footer{
+    float: right;
+    width: 50%;
+    text-align: center;
+    margin-top: 28px;
+    height: 257px;
+  }
+  .main-footer .right-footer img{
+    width: 92px;
+  
+  }
+  
+  .main-footer .right-footer p{
+    color: white;
+      font-family: tahoma;
+      font-size: 17px;
+      margin: auto;
+      padding: 24px
+  }
+  
+  .main-footer .left-footer{
+    width: 50%;
+    height: 271px;
+    text-align: left;
+    margin-left: 42px;
+  
+  }
+  
+  .main-footer .left-footer i{
+    font-size: 47px;
+    margin-left: 35px;
+    color: #bbb8b8;
+    margin-top: 84px;
+  }
+  
+  .main-footer .left-footer i:hover{
+    color: rgb(141, 164, 214);
+  }
+  
+  .main-footer p{
+    text-align: center;
+    color: #c5c3c3;
+    font-size: 14px;
+    font-family: tahoma;
+  }
+  
+  
+  
+  /* end footer */
+  
+  /* پایان استایل دهی */
+  
+  
+  
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  /*
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+    /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+    pre {
+      white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    /*
+       * Printing Tables:
+       * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
+    thead {
+      display: table-header-group;
+    }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  
