@@ -1,0 +1,8 @@
+2020-07-13T10:12:02+00:00 CRITICAL Class 'PHPExcel' not found in /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_get-json-woo/get-json-woo.php on line 33
+
+2020-07-13T10:12:43+00:00 CRITICAL Class 'PHPExcel' not found in /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_get-json-woo/get-json-woo.php on line 33
+
+2020-07-13T10:12:46+00:00 CRITICAL Class 'PHPExcel' not found in /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_get-json-woo/get-json-woo.php on line 33
+
+2020-07-13T10:15:52+00:00 CRITICAL require(): Failed opening required 'PHPExcel/Classes/PHPExcel.php' (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_get-json-woo/get-json-woo.php on line 32
+

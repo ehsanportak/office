@@ -106,9 +106,9 @@ function dashboard_widget_function( $post, $callback_args ) {
     $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "http://127.0.0.1:5000/api/v1/resources/books?id=0",
+  CURLOPT_URL => "http://127.0.0.1:8050/_dash-layout",
   CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_TIMEOUT => 30,
+  CURLOPT_TIMEOUT => 60,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "GET",
   CURLOPT_HTTPHEADER => array(
@@ -121,11 +121,15 @@ $err = curl_error($curl);
 
 curl_close($curl);
 $json=json_decode($response);
+print_r($err);
+print_r($response);
 
-echo $json[0]->title , '<br>';
-echo $json[0]->author, '<br>';
-echo $json[0]->year_published, '<br>';  
+// echo $json[0]->title , '<br>';
+// echo $json[0]->author, '<br>';
+// echo $json[0]->year_published, '<br>';  
+
 
 }
+
 
 ?>
