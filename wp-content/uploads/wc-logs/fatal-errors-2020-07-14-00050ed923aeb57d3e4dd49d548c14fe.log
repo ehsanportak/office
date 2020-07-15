@@ -1,0 +1,12 @@
+2020-07-14T08:59:29+00:00 CRITICAL Object of class mysqli_result could not be converted to string در /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_get-json-woo/view/pending.php در خط 21
+
+2020-07-14T10:00:25+00:00 CRITICAL Call to undefined function PHPSTORM_META\type() در /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_get-json-woo/view/product.php در خط 21
+
+2020-07-14T10:47:12+00:00 CRITICAL Cannot use object of type mysqli_result as array در /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_get-json-woo/view/product.php در خط 17
+
+2020-07-14T13:16:26+00:00 CRITICAL Cannot redeclare wpdocs_add_dashboard_widgets() (previously declared in /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_get-json-woo/get-json-woo.php:16) در /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_chart2/ep_chart.php در خط 101
+
+2020-07-14T13:16:27+00:00 CRITICAL Cannot redeclare wpdocs_add_dashboard_widgets() (previously declared in /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_get-json-woo/get-json-woo.php:16) در /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_chart2/ep_chart.php در خط 101
+
+2020-07-14T13:16:27+00:00 CRITICAL Cannot redeclare wpdocs_add_dashboard_widgets() (previously declared in /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_get-json-woo/get-json-woo.php:16) در /opt/lampp/htdocs/wordpress/wp-content/plugins/ep_chart2/ep_chart.php در خط 101
+
